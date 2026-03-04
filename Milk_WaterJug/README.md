@@ -66,7 +66,6 @@ Bfs-
 2.Uses queue
 3.Guarantees shortest path 
 4.Requires more memory
-
 5.Depth First Search (DFS)
 
 
@@ -97,6 +96,7 @@ Continue until the goal state is found
 2.Explores deep paths first
 3.Uses less memory
 4.Does not guarantee shortest path
+
 Other Uninformed Search Methods
 Apart from BFS and DFS, there are other search strategies which are variants of DFS.
 Depth Limited Search (DLS)
@@ -119,4 +119,5 @@ Breadth First Search (BFS), Depth First Search (DFS), Depth Limited Search (DLS)
 1,Breadth First Search explores nodes level by level using a queue. It is complete and guarantees the shortest path to the goal when all steps have equal cost. However, BFS requires more memory because it stores many states during the search.
 2.Depth First Search explores nodes by going as deep as possible before backtracking. It uses recursion or a stack and requires less memory compared to BFS. However, DFS does not guarantee the shortest solution and may explore deep paths that do not lead to the goal.
 3.Depth Limited Search is a variation of DFS where a maximum depth limit is set. This prevents the algorithm from searching infinitely deep paths, but the solution may be missed if it lies beyond the depth limit.
+
 4.Iterative Deepening Depth First Search repeatedly performs depth-limited searches with increasing depth limits. It combines the advantages of BFS and DFS by finding the optimal solution while using relatively less memory.
